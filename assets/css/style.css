@@ -1,0 +1,402 @@
+*{
+    padding: 0;
+    margin: 0;
+    border: 0;
+}
+*,*::before,::after{
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+:focus,:active{outline: none;}
+a:focus,a:active{outline: none;}
+nav,footer,header,aside{display: block;}
+
+html.body{
+    height: 100%;
+    width: 100%;
+    font-size: 100%;
+    line-height: 1;
+    font-size: 14px;
+    -ms-text-size-adjust: 100%;
+    -moz-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+}
+
+input.button,textarea{font-family: inherit;}
+
+input::-ms-clear{display: none;}
+button{cursor: pointer;}
+button::-moz-focus-inner{padding: 0;border: 0;}
+a, a:visited{text-decoration: none;}
+a:hover{text-decoration: none;}
+ul li{list-style: none;}
+img{vertical-align: top;}
+
+h1,h2,h3,h4,h5,h6{font-family: inherit; font-weight: 400;}
+
+body {
+    max-width: 1440px;
+    background-color: #ffff;
+    font-family: 'Roboto';
+    border: 1px solid black;
+}
+
+.container {
+    width: 1365px;
+    display: flex;
+    justify-content: space-between;    
+    align-items: center;     
+    margin: 25px 37.5px;
+}
+
+.header__menu{
+    display: flex;
+    text-align: justify;
+}
+
+.header__menu a {
+    margin: 0 12px;
+}
+
+
+.header__btn{
+    text-decoration: none;
+    font-weight: 400;
+    font-size: 13px;
+    letter-spacing: 1.4px;
+    color: #000000;
+}
+
+.header img{
+
+}
+
+.header__card{
+    font-weight: 400;
+    font-size: 14px;
+    text-align: right;
+    letter-spacing: 1.4px;
+    text-transform: uppercase;
+    color: #000000;
+    margin-right: 80px;
+    
+}
+
+/*DESK*/
+
+.desk{
+    background-image: url(../imgs/desk.png);
+    height: 504px ;
+    width: 1440px;
+}
+
+.desk__row{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 193px 0;
+}
+
+.desk__title{
+    font-weight: 400;
+    font-size: 43px;
+    line-height: 46px;
+    color: #FFFFFF;
+}
+
+.desk__text{
+    font-size: 15px;
+    line-height: 18px;
+    text-align: center;
+    letter-spacing: 0.8px;
+    color: #FFFFFF;
+    padding-top: 12px;
+}
+
+.desk__text--learn{
+    font-size: 13px;
+    line-height: 15px;
+    text-align: center;
+    letter-spacing: 1.4px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    padding-top: 28px;
+}
+
+/*DESIGN*/
+
+.design{
+    margin: 80px 0;
+}
+
+.design__row{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.design__title{
+    font-size: 43px;
+    line-height: 58px;
+    color: #000000;
+    padding: 10px 0;
+}
+
+.design__text{
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: 0.8px;
+    color: #A0A0A0;
+    padding: 10px 0;  
+}
+
+.design__get{
+    font-size: 13px;
+    line-height: 21px;
+    letter-spacing: 1.4px;
+    text-transform: uppercase;
+    color: #000000;
+    padding: 10px 0;
+}
+
+.design__product{
+    display: flex;
+    justify-content: space-evenly;
+    padding: 20px 0;
+}
+
+.design__product--img{
+}
+
+.design__title--pads{
+    display: flex;
+    justify-content: center;
+    margin-top: 51px;
+
+}
+
+.design__text--pads{
+    display: flex;
+    justify-content: center;
+    margin-top: 23px;
+}
+
+/*PRODUCTS*/
+
+.products{}
+
+.products__row{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 80px;
+}
+
+.products__title{
+    font-size: 33px;
+    line-height: 36px;
+    color: #000000;
+    margin: 16px 0;
+}
+
+.products__text{
+    font-size: 15px;
+    line-height: 18px;
+    letter-spacing: 0.8px;
+    color: #A0A0A0;
+}
+
+.products__product{
+    display: flex;
+    justify-content: space-around;
+    padding: 0 25px;
+}
+
+.products__product--gajet{
+    display: flex;
+    flex-direction: column;
+}
+
+.products__product--name{
+    font-size: 13px;
+    line-height: 21px;
+    letter-spacing: 0.7px;
+    color: #A0A0A0;
+    margin-top: 22.39px;
+}
+
+.products__product--price{
+    font-size: 12px;
+    line-height: 21px;
+    letter-spacing: 0.7px;
+    color: #A0A0A0;
+}
+
+/*INSPIRATION*/
+
+.inspiration{
+    background-image: url(../imgs/inspiration.png);
+    height: 504px ;
+    width: 1440px;
+    margin-top: 95px;
+}
+
+.inspiration__row{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 193px 0;
+}
+
+.inspiration__title{
+    font-size: 66px;
+    line-height: 70px;
+    color: #FFFFFF;
+}
+
+.inspiration__text{
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.8px;
+    color: #FFFFFF;
+    padding-top: 12px;
+}
+
+.inspiration__text--learn{
+    font-size: 13px;
+    line-height: 15px;    
+    letter-spacing: 1.4px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    padding-top: 28px;
+}
+
+/*MADE*/
+
+.made{
+    margin-top: 116.14px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.made__title{
+    font-weight: 400;
+    font-size: 34px;
+    line-height: 36px;
+    text-align: center;
+    color: #000000;
+}
+
+.made__text{
+    max-width: 777px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: center;
+    letter-spacing: 0.8px;
+    color: #A0A0A0;
+    padding: 23px 0;
+
+}
+
+
+.made__img{
+    max-width: 1052px;
+}
+
+/*MAKE*/
+
+.make{
+    margin-top: 42.28px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.make__row{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.make__title{
+    font-size: 34px;
+    line-height: 36px;
+    text-align: center;
+    color: #000000;
+}
+
+.make__text{
+    margin: 23px 0 79.28px 0;
+    max-width: 789px;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: center;
+    letter-spacing: 0.8px;
+    color: #A0A0A0;
+}
+
+.make__imgs{
+    max-width: 1365px;
+    display: grid;
+    grid-template-columns: auto auto auto auto auto auto;
+    gap: 28px 25px;
+}
+
+.make__row--bottom{
+    margin-top: 123.34px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.make__text--bottom{
+    margin-top: 44px;
+    font-size: 13px;
+    line-height: 21px;
+    text-align: center;
+    letter-spacing: 1.4px;
+    text-transform: uppercase;
+    color: #000000;
+}
+
+
+/*HOPE*/
+
+.hope{
+    margin-top: 120.34px;
+}
+
+.hope__row{
+    background: rgba(154, 168, 177, 1);
+    padding: 120px 145px;
+    margin:  0 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 1340px;
+    height: 404px;
+}
+
+.hope img{}
+
+.hope__title{
+    font-size: 43px;
+    line-height: 58px;
+    color: #FFFFFF;
+    padding: 24px 0 23px;
+}
+
+.hope__text{
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: 0.8px;
+    color: #FFFFFF;
+}
+
+
+
+

@@ -44,7 +44,7 @@ body {
 }
 
 .container {
-    width: 1365px;
+    max-width: 1365px;
     display: flex;
     justify-content: space-between;    
     align-items: center;     
@@ -89,7 +89,7 @@ body {
 .desk{
     background-image: url(../imgs/desk.png);
     height: 504px ;
-    width: 1440px;
+    max-width: 1440px;
 }
 
 .desk__row{
@@ -97,6 +97,7 @@ body {
     flex-direction: column;
     align-items: center;
     padding: 193px 0;
+    max-width: 1440px;
 }
 
 .desk__title{
@@ -115,7 +116,7 @@ body {
     padding-top: 12px;
 }
 
-.desk__text--learn{
+.desk__text-learn{
     font-size: 13px;
     line-height: 15px;
     text-align: center;
@@ -168,17 +169,23 @@ body {
     padding: 20px 0;
 }
 
-.design__product--img{
+.design__product-img{
 }
 
-.design__title--pads{
+.design__title-pads{
     display: flex;
     justify-content: center;
     margin-top: 51px;
 
 }
 
-.design__text--pads{
+.design__text-pads{
+    font-size: 13px;
+    line-height: 15px;
+    letter-spacing: 1.4px;
+    text-transform: uppercase;
+    color: #000000;
+    text-decoration: none;
     display: flex;
     justify-content: center;
     margin-top: 23px;
@@ -188,12 +195,40 @@ body {
 
 .products{}
 
+
+
 .products__row{
     display: flex;
     align-items: center;
-    flex-direction: column;
-    margin-bottom: 80px;
+    flex-direction: column;    
 }
+
+.product_dot {
+    margin: 40px 0 19px;
+    max-height: 21px;
+    position: relative;
+    width: 7px;
+    height: 7px;
+    background-color: #000000;
+}
+
+.product_dot::before,
+.product_dot::after{
+    content: '';
+    position: absolute;
+    width: 7px;
+    height: 7px;
+    background-color: #000000;
+}
+
+.product_dot::after{
+    left: 16px;
+}
+.product_dot::before{
+    right: 16px;
+}
+
+
 
 .products__title{
     font-size: 33px;
@@ -215,12 +250,12 @@ body {
     padding: 0 25px;
 }
 
-.products__product--gajet{
+.products__product-gajet{
     display: flex;
     flex-direction: column;
 }
 
-.products__product--name{
+.products__product-name{
     font-size: 13px;
     line-height: 21px;
     letter-spacing: 0.7px;
@@ -228,7 +263,7 @@ body {
     margin-top: 22.39px;
 }
 
-.products__product--price{
+.products__product-price{
     font-size: 12px;
     line-height: 21px;
     letter-spacing: 0.7px;
@@ -240,7 +275,7 @@ body {
 .inspiration{
     background-image: url(../imgs/inspiration.png);
     height: 504px ;
-    width: 1440px;
+    max-width: 1440px;
     margin-top: 95px;
 }
 
@@ -265,7 +300,7 @@ body {
     padding-top: 12px;
 }
 
-.inspiration__text--learn{
+.inspiration__text-learn{
     font-size: 13px;
     line-height: 15px;    
     letter-spacing: 1.4px;
@@ -321,6 +356,7 @@ body {
     display: flex;
     flex-direction: column;
     text-align: center;
+    align-items: center;
 }
 
 .make__title{
@@ -347,14 +383,14 @@ body {
     gap: 28px 25px;
 }
 
-.make__row--bottom{
+.make__row-bottom{
     margin-top: 123.34px;
     display: flex;
     flex-direction: column;
     text-align: center;
 }
 
-.make__text--bottom{
+.make__text-bottom{
     margin-top: 44px;
     font-size: 13px;
     line-height: 21px;
@@ -378,8 +414,8 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 1340px;
-    height: 404px;
+    max-width: 1340px;
+    max-height: 404px;
 }
 
 .hope img{}
@@ -398,6 +434,98 @@ body {
     color: #FFFFFF;
 }
 
+/*GOUP*/
 
+.goup{
+    margin: 34.45px auto;
+    display: flex;
+    position: relative;
+    max-width: 1340px;
+}
 
+.goup__row{
+    display: flex;
+    margin-top: 64px;
+}
 
+.goup__list{
+    max-width: 159px;
+}
+
+.goup__listcol{
+    max-width: 170px;
+}
+
+.goup__listpos{
+    padding: 16px 0;
+}
+.goup__listpos a{
+    text-decoration: none;
+    font-size: 22px;
+    line-height: 24px;
+    color: #000000;
+}
+
+.goup__mail{
+    max-width: 500px;
+    padding: 16px 0 0 12.5px;
+}
+
+.goup__title{
+    margin-bottom: 23px;
+    font-size: 22px;
+    line-height: 24px;
+    color: #000000;
+}
+
+.goup__text{
+    max-width: 348px;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.8px;
+    color: #A0A0A0;
+}
+
+.goup__email{
+    border-bottom: 1px solid rgba(0, 0, 0, 1);
+    width: 320px;
+    margin-top: 91.45px;
+}
+.goup__botton{}
+
+.goup__button-up{
+
+}
+
+.goup__button-up img{
+    padding-left: 695px
+}
+
+/*FOOTER*/
+
+.footer{
+    margin: 80px 0 19.55px 0;
+}
+
+.fooret__row{
+    display: flex;
+    max-width: 1365px;
+    align-content: flex-end;
+    margin-left: 500px;
+
+}
+
+.footer__textlist{
+    text-decoration: none;
+    font-size: 13px;
+    line-height: 15px;
+    text-align: right;
+    letter-spacing: 0.8px;
+    color: #707A7F;
+    padding: 0 40px 0 40px;
+    
+}
+
+.footer__textlist_active{
+    color: #000000;
+}

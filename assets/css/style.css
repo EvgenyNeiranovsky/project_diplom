@@ -600,6 +600,7 @@ body {
 
 .goup__listcol{
     max-width: 170px;
+    margin-left: 46px;
 }
 
 .goup__listpos{
@@ -644,7 +645,7 @@ body {
 }
 
 .goup__button-up img{
-    padding-left: 742px
+    padding-left: 788px
 }
 
 /* 1200+*/
@@ -666,13 +667,14 @@ body {
             font-size: 12px;
             
         }
+    
             
 
 }
 /*768px 991.75px*/
 @media(max-width:991.75px) {
     .goup__button-up img {
-        padding-left: 137px;
+        padding-left: 177px;
         width: 90%;
     }
     .goup__listpos a {
@@ -687,6 +689,7 @@ body {
     .goup__email {
         width: 250px;
     }
+    
 }
 /*320px 767.75px*/
 @media(max-width:767.75px){}
